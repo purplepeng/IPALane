@@ -117,7 +117,7 @@ Apple的命令行打包工具
 
 ###5.4 配置渠道脚本
 
-####pgyer.sh(蒲公英)
+####pgyer.sh([蒲公英](http://www.pgyer.com))
 
 ```	
 	pwd
@@ -126,15 +126,23 @@ Apple的命令行打包工具
 	pwd
 	
 	#替换ipa文件名
-	curl -F "file=@./marathon.ipa" \
+	curl -F "file=@{$filePath}" \
 	#替换uKey（User Key）和_api_key（API Key）
-	-F "uKey=6849e7641e0323d6556b1d1bdf4da69b" \
-	-F "_api_key=acddfd79a978d61f9d52085d6e311b11" \
+	-F "uKey={$uKey}" \
+	-F "_api_key={$apiKey}" \
 	http://www.pgyer.com/apiv1/app/upload
     
 ```
 
-####fir.sh（fir.im）
+其中：
+
+* {$filePath}是应用安装包文件的路径
+* {$uKey}是开发者的用户 Key，在应用管理-API中查看
+* {$apiKey}是开发者的 API Key，在应用管理-API中查看
+
+见[蒲公英](http://www.pgyer.com/doc/view/upload_one_command)
+
+####fir.sh([fir.im](http://fir.im))
 
 ```	
 	pwd
@@ -143,9 +151,10 @@ Apple的命令行打包工具
 	pwd
 	
 	#发布应用到fir.im(配置生成的ipa名和fir.im API  Token)
-	fir p ./marathon.ipa -T 8e5d323ae844cf3a53cc4ddc679044c0
+	fir p path/to/application -T YOUR_FIR_TOKEN
     
 ```
+见[fir-cli](http://blog.fir.im/fir_cli/)
 
 ###5.5 工程目录结构
 
