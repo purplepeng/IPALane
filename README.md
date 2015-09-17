@@ -55,7 +55,8 @@ Apple的命令行打包工具
 * 支持TestFlight
 * 支持多航线分发，可选择分发到不同平台：[蒲公英](http://www.pgyer.com)、[fir.im](http://fir.im)、[TestFlight(iTunes Connect)](https://developer.apple.com/library/prerelease/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/BetaTestingTheApp.html#//apple_ref/doc/uid/TP40011225-CH35-SW2)
 
-![alt text](./ipa分发流程.png)
+![ipa](https://cloud.githubusercontent.com/assets/3256113/9937003/3edd1e40-5d91-11e5-907c-6bba3a95b4db.png)
+
 
 ##4.方案
 ###非TestFlight分发测试
