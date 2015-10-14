@@ -97,7 +97,7 @@ Apple的命令行打包工具
 	```
  	lane :pgyer do
     ENV["PROFILE_UDID"] = lane_context[SharedValues::SIGH_UDID]
-    gym(scheme: "marathon")
+    gym(scheme: "marathon",use_legacy_build_api: true)
     sh "../pgyer.sh"
 
   end
@@ -108,7 +108,7 @@ Apple的命令行打包工具
 	```
  	lane :fir do
     ENV["PROFILE_UDID"] = lane_context[SharedValues::SIGH_UDID]
-    gym(scheme: "marathon")
+    gym(scheme: "marathon",use_legacy_build_api: true)
     sh "../fir.sh"
 
   end
