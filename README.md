@@ -180,3 +180,6 @@ Apple的命令行打包工具
 * deliver/fastlane分发ipa到iTunes Connect不支持TestFlight?
 	* fastlane已支持TestFlight 
 * 管理provision
+* IPALane优化
+	* 支持多target配置 
+	* 支持多Configuration配置
