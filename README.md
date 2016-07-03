@@ -182,4 +182,4 @@ Apple的命令行打包工具
 * 管理provision
 * IPALane优化
 	* 支持多target配置 
-	* 支持多Configuration配置
+	* 支持[多Configuration](https://github.com/purplepeng/MultiConfig)配置
